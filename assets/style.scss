@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+:root {
+    --main-bg-color: #777;
+}
+#container {
+    border: 1px solid var(--main-bg-color);
+    height: 300px;
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+#container > div {
+    border: 1px solid var(--main-bg-color); 
+    height: 99px;
+    width: 99px;
+    cursor: pointer;
+}
+.hide {
+    opacity: 0;
+}
+#congratz {
+    color:red;
+    font-size: 40px;
+    margin-top: 50px;
+}
+#playX,
+#playO {
+    border: 1px solid var(--main-bg-color);
+    padding: 10px 20px;
+    margin-top: -30px;
+}
+.btn-primary {
+    margin-top: -90px !important;
+}
