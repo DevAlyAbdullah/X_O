@@ -1,5 +1,6 @@
 $(function () {
     var lastVal = "X";
+    var audioClick = new Audio("https://docs.google.com/uc?export=download&id=1PVt3NXAbMkAgpl0oRx4IXTogbxqHTp1-");
 
     $("#container > div").click(function () {
         if( $("#congratz").val() != "Congratulations O, you just won!")
@@ -11,8 +12,7 @@ $(function () {
                 console.log("error");
             } else if (check())
             {
-                const audio = new Audio("/assets/sounds/click.wav");
-                audio.play();
+                audioClick.play();
 
                 $("#playX").toggleClass("hide");
                 $("#playO").toggleClass("hide");
@@ -28,6 +28,7 @@ $(function () {
         }
     });
 
+    const audioCongratz = new Audio("https://docs.google.com/uc?export=download&id=14UWI-Z7SIpHWZhfebKQubJ537FbcTpwM");
 
     function check(){
         var one = $("#one").val();
@@ -59,14 +60,12 @@ $(function () {
         {
             if(lastVal == "X")
             {
-                const audio = new Audio("/assets/sounds/congratz.mp3");
-                audio.play();
+                audioCongratz.play();
                 $("#congratz").append("Congratulations O, you just won!");
                 $("#congratz").val("Congratulations O, you just won!");                
             } else if (lastVal == "O")
             {
-                const audio = new Audio("/assets/sounds/congratz.mp3");
-                audio.play();
+                audioCongratz.play();
                 $("#congratz").append("Congratulations X, you just won!");
                 $("#congratz").val("Congratulations O, you just won!");                
             }
