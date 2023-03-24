@@ -44,4 +44,26 @@
 
 .btn-primary {
   margin-top: -90px !important;
+}
+
+@media (max-width: 715px) {
+  #container {
+    height: 89px;
+    width: 89px;
+  }
+  #container > div {
+    height: 29px;
+    width: 29px;
+  }
+  #congratz {
+    font-size: 13px;
+  }
+  #playX,
+  #playO {
+    font-size: 11px;
+  }
+  .codedby {
+    font-size: 13px;
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
